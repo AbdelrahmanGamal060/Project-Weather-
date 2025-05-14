@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <main class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="me-4"><img src="Weather/logo@2x.png" alt=""></div>
+                <div class="mt-1">
+                    <a class="navbar-brand text-white" href="#">Weather</a>
+                    <p class="text-white">tagline goes here</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+                        <li class="nav-item me-3 ">
+                            <a class="text-white fs-4 nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="text-white fs-4 nav-link" href="#">news</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="text-white fs-4 nav-link" href="#">live caneras</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="text-white fs-4 nav-link" href="#">photo</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="text-white fs-4 nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </main>
+
+    <section class="section container-fluid overflow-hidden mt-4">
+        <div class="input-group mb-3 container mt-5">
+            <input type="search" class="form-control me-3 text-white fs-4" placeholder="Find your location ..."
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="searchInput">
+            <button class="btn btn-outline-info p-2" type="button" id="button-addon2">Button</button>
+        </div>
+        <!-- Weather first data -->
+        <div class="container mb-5">
+            <div class="row " id="rowData">
+                <div class="col-md-12 col-lg-4 partOfSection mt-5 text-white">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center  p-2 headerSection">
+                            <h5 id="day-Name">Monday</h5>
+                            <span>
+                                <span class="fs-4" id="data-Number">30</span>
+                                <span class="fs-4" id="data-Month">may</span>
+                            </span>
+                        </div>
+                        <div>
+                            <p class="px-2 fs-3" id="today-location">cairo</p>
+                            <h3 class="px-5 fs-1 fw-bold" >
+                                <span id="today-temp">19</span>
+                                <span><sup>o</sup> c</span>
+                            </h3>
+                            <img class="d-block" id="today-img" src="./Weather/113.png" alt="weather">
+                            <a class="px-3 fs-5" id="condition_Sunny" href="">Sunny</a>
+                            <div class="d-flex justify-content-between align-items-center p-4 fs-3">
+                                <div>
+                                    <img src="./Weather/icon-umberella.png" alt="umberella">
+                                    <span id="data-Precipitation">20%</span>
+                                </div>
+                                <div>
+                                    <img src="./Weather/icon-wind.png" alt="wind">
+                                    <span id="data-Wind">18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="./Weather/icon-compass.png" alt="compass">
+                                    <span id="data-Compass">East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Weather second data -->
+                <div class="col-md-12 col-lg-4 p-0 mt-5 text-white middle text-center">
+                    <div>
+                        <div class=" p-2 middleHeader">
+                            <h5 class="Next-day-Name">Tuesday</h5>
+                        </div>
+                        <div>
+                            <img class="next-condition-img" src="./Weather/113.png" alt="weather">
+                            <h3 class="px-5 fs-1 fw-bold">
+                                <span class="next-max-temp">19</span>
+                                <span><sup>o</sup> c</span>
+                            </h3>
+                            <h3 class="px-5 fs-4">
+                                <span class="next-min-temp">19</span>
+                                <span><sup>o</sup> c</span>
+                            </h3>
+                            <a class="px-3 fs-5 next-condition-Sunny" href="">Sunny</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Weather third data -->
+                <div class="col-md-12 col-lg-4 partOfSection mt-5 text-white text-center">
+                    <div>
+                        <div class=" p-2 headerSection">
+                            <h5 class="Next-day-Name">Monday</h5>
+                        </div>
+                        <div>
+                            <img class="next-condition-img" src="./Weather/176.png" alt="weather">
+                            <h3 class="px-5 fs-1 fw-bold">
+                                <span class="next-max-temp">19</span>
+                                <span><sup>o</sup> c</span>
+                            </h3>
+                            <h3 class="px-5 fs-4">
+                                <span class="next-min-temp">19</span>
+                                <span><sup>o</sup> c</span>
+                            </h3>
+                            <a class="px-3 fs-5 next-condition-Sunny" href="">Sunny</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="input-group mb-3 container mt-5">
+                        <input type="email" class="form-control me-3" placeholder="Enter your email to subscribe ..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-info rounded-5 text-uppercase p-2" type="button"
+                            id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 DivOficon">
+                    <div class="d-flex justify-content-around -md-4">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-google-wallet"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mt-4 text-white fs-5">
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
